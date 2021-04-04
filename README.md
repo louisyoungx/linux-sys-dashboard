@@ -1,114 +1,89 @@
 <h1 align="center">
-  <a href="https://afaqurk.github.io/linux-dash">
-    <img src="https://raw.githubusercontent.com/afaqurk/screenshots/master/linux-dash/v2.0-logo.png"/>
+  <a href="https://gitee.com/louisyoung1/projects">
+    <img src="https://portrait.gitee.com/uploads/avatars/user/2529/7589523_louisyoung1_1597595544.png"/>
   </a>
 </h1>
 
 <p align="center">
-  <sub>v2.0</sub><br/>
-  <small>A simple & low-overhead web dashboard for linux systems</small>
+  <sub>v1.0</sub><br/>
+  <small>一个简单 & 轻量的 web 仪表盘 for linux 系统</small>
 </p>
 
 <p align="center">
   <small>
-    <a href="https://afaqurk.github.io/linux-dash">Demo</a> &nbsp;|&nbsp;
-    <a href="https://github.com/afaqurk/linux-dash/wiki">
-      Docs
+    <a href="#">Demo</a> &nbsp;|&nbsp;
+    <a href="https://gitee.com/louisyoung1/linux-sys-dashboard/blob/master/README.md">
+      文档
+    </a> &nbsp;|&nbsp;
+    <a href="https://gitee.com/louisyoung1/linux-sys-dashboard/blob/master/README.en.md">
+      English
     </a>
   </small>
 </p>
 
 
-<p align="center">
-  <a href="https://gitter.im/afaqurk/linux-dash">
-    <img
-      src="https://badges.gitter.im/gitterHQ/gitter.png"
-      alt="linux-dash Gitter chat">
-  </a>
-</p>
 
 <br/>
 
 ## Features
-* **Small** ----- Under 400KB on disk _(with .git removed)!_
-* **Simple** ---- A minimalist, beautiful dashboard
-* **Easy** ------ Drop-in installation
-* **Versatile** -- Choose your stack from Node.js, Go, Python, PHP
+* **轻量** ------ 占用在400KB以下
+* **美观** ------ 极简主义，漂亮的仪表盘
+* **简单** ------ 上手简洁
+* **多样** ------ 选择使用 Python, Docker的版本
 
-## Installation
+## 安装
 
 ### Step 1
 ```sh
 ## 1. clone the repo
-git clone --depth 1 https://github.com/afaqurk/linux-dash.git
+git clone https://gitee.com/louisyoung1/linux-sys-dashboard.git
 
 ## 2. go to the cloned directory
-cd linux-dash/app/server
+cd linux-sys-dashboard
 
 ```
-OR, if you prefer to download manually:
+或者，如果你喜欢手动下载:
 
 ```sh
 ## 1. Download the .zip
-curl -LOk https://github.com/afaqurk/linux-dash/archive/master.zip && unzip master.zip
+curl -LOk https://gitee.com/louisyoung1/linux-sys-dashboard/repository/archive/master.zip && unzip master.zip
 
 ## 2. navigate to downloaded & unzipped dir
-cd linux-dash-master/app/server
+cd linux-sys-dashboard
 
 ```
 
 ### Step 2
 
-See instructions for preferred server linux-dash server _(all included)_:
+详见 linux-dash server 支持的版本 :
 
-* [Node.js](#if-using-nodejs) _(recommended)_
-* [Go](#if-using-go)
 * [Python](#if-using-python)
-* [PHP](#if-using-php)
+* [Python](#if-using-python)
 
-#### If Using Node.js
-```sh
-## install dependencies
-npm install --production
-
-## start linux-dash (on port 80 by default; may require sudo)
-## You may change this with the `LINUX_DASH_SERVER_PORT` environment variable (eg. `LINUX_DASH_SERVER_PORT=8080 node server`)
-## or provide a --port flag to the command below
-## Additionally, the server will listen on every network interface (`0.0.0.0`).
-## You may change this with the `LINUX_DASH_SERVER_HOST` environment variable (eg. `LINUX_DASH_SERVER_HOST=127.0.0.1 node server`)
-## or provide a --host flag to the command below
-node index.js
-
-```
-
-#### If Using Go
-```sh
-## start the server (on port 80 by default; may require sudo)
-go run index.go
-```
-
-To build a binary, run `go build && ./server -h`. See [@tehbilly](https://github.com/sergeifilippov)'s notes [here](https://github.com/afaqurk/linux-dash/pull/281) for binary usage options
-
-#### If Using Python
+#### 使用 Python
 ```sh
 # Start the server (on port 80 by default; may require sudo).
 python index.py
 ```
 
-#### If Using PHP
+#### 使用 Docker
 
-1. Make sure you have the `exec`, `shell_exec`, and `escapeshellarg` functions enabled
-2. Point your web server to `app/` directory under `linux-dash`
-2. Restart your web server (Apache, nginx, etc.)
-  - For PHP + Apache setup follow the [Digital Ocean tutorial](https://www.digitalocean.com/community/tutorials/how-to-install-linux-dash-on-ubuntu-14-04).
-  - For help with nginx setup, see [this gist](https://gist.github.com/sergeifilippov/8909839) by [@sergeifilippov](https://github.com/sergeifilippov).
+确保你已经启用了Docker，你可以用一行命令安装Docker
 
-## Support
+```sh
+curl -fsSL https://get.docker.com | bash -s docker --mirror Aliyun
+```
 
-For general help, please use the [Gitter chat room](https://gitter.im/afaqurk/linux-dash).
+## 技术支持
 
-## Security
+有技术难题，在 [Louis-House](https://www.louisyoung.work/Contact)有我的联系方式
 
-**It is strongly recommended** that all linux-dash installations be protected via a security measure of your choice.
+## 安全
 
-Linux Dash does not provide any security or authentication features.
+**强烈建议 **在安全的环境下安装**[Linux-sys Dashboard](https://gitee.com/louisyoung1/linux-sys-dashboard)**
+
+**[Linux-sys Dashboard](https://gitee.com/louisyoung1/linux-sys-dashboard)** 不提供任何安全性或身份验证特性。
+
+## 许可
+
+The MIT License (**[MIT](https://gitee.com/louisyoung1/linux-sys-dashboard/blob/master/LICENSE)**)
