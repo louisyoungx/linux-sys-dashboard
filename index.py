@@ -33,7 +33,7 @@ class MainHandler(BaseHTTPRequestHandler):
                 module = self.path.split('=')[1]
                 cmdPath = appRootPath + modulesSubPath + " " + module
                 output = subprocess.Popen(
-                    cmdPath,
+                    "sudo " + cmdPath,
                     shell = True,
                     stdout = subprocess.PIPE)
                 data = output.communicate()[0]
