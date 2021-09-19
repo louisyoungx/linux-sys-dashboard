@@ -50,6 +50,7 @@ curl -LOk https://gitee.com/louisyoung1/linux-sys-dashboard/repository/archive/m
 
 ## 2. navigate to downloaded & unzipped dir
 cd linux-sys-dashboard
+chmod 777 linux_json_api.sh
 
 ```
 
@@ -57,8 +58,8 @@ cd linux-sys-dashboard
 
 详见 linux-dash server 支持的版本 :
 
-* [Python](#if-using-python)
-* [Python](#if-using-python)
+* [Python](#使用-Python)
+* [Docker](#使用-Docker)
 
 #### 使用 Python
 ```sh
